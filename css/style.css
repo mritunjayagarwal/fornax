@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #fff;
+    max-width: 100%;
+    font-family: 'Manrope', 'sans-serif';
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section {
+    padding: 100px 0 50px 0;
+    position: relative;
+}
+
+.highlight {
+    color: #4D77FF;
+}
+
+.navbar-brand > img{
+    width: 50%;
+}
+
+.nav-link{
+    margin-left: 0 !important;
+}
+
+.nav-link {
+    margin-right: 20px;
+    transition: 0.5s;
+    margin-top: -8px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8) !important;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #4D77FF !important;
+}
+
+.signup-btn {
+    background: #4D77FF;
+    padding: 0.5em 1em;
+    color: #fff !important;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.more-btn {
+    border: 2px solid #4D77FF;
+    padding: 1em 3em;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.3s ease-in;
+    color: #4D77FF;
+    font-weight: 600;
+}
+
+.more-btn:hover {
+    background: #4D77FF;
+    color: #fff;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+
+.head-title {
+    font-weight: 600;
+    font-size: 2.5em;
+    padding: 1em;
+}
+.head-title-no-border {
+    font-weight: 600;
+    font-size: 2.5em;
+    padding: 1em;
+    margin-bottom: -10px;
+}
+
+.head-title::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000;
+    width: 10%;
+    margin: 10px auto 0 auto;
+    position: relative;
+    bottom: -6px;
+    /* your padding + border-width */
+}
+
+.head-para {
+    font-size: 16px;
+    width: 80%;
+    margin: -15px auto 0 auto;
+    color: #7D7987;
+}
+
+.hero-img{
+    width: 60%
+}
+
+.home-btn1 {
+    background: #F2C94C;
+    padding: 0.5em 2em;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.home-btn2 {
+    background: #4D77FF;
+    padding: 0.5em 3em;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Hero section */
+
+#hero {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.circle-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: ZoomInZoomOut 6s linear infinite;
+}
+
+.hero-main {
+    color: #121212;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+}
+
+.hero-para {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #696969;
+}
+
+/* About Sectio */
+
+#about {
+    background: rgba(77, 119, 255, 0.1);
+    padding: 20px 0 100px 0;
+}
+
+.about-img{
+    border-radius: 50px !important;
+}
+
+.about-body{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-tag{
+    color: #4D77FF;
+}
+
+.about-head{
+    font-weight: 600;
+}
+
+/* Article Section */
+
+.square-left {
+    position: absolute;
+    left: 5%;
+    top: 120px;
+}
+
+.shape-right {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    animation: MoveUpDown 3s linear infinite;
+}
+
+.article-item {
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.article-item {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: 0.2s ease-in;
+}
+
+.article-item:hover {
+    margin-top: -5px;
+}
+
+.article-image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+}
+
+.article-body {
+    padding: 1em;
+}
+
+.article-head {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.article-desc {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* service section */
+
+.shape-left {
+    position: absolute;
+    left: 0;
+    top: 28%;
+    animation: MoveUpDown 5s linear infinite;
+}
+
+.square-right {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+.service-item {
+    height: 350px;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 2em;
+    transition: 0.15s ease-in;
+}
+
+.service-item:hover {
+    transform: scale(1.015);
+}
+
+.service-head {
+    font-family: Manrope;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.service-desc {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* Members Section */
+
+.plant-right {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    animation: RotateLeftRight 5s linear infinite;
+}
+
+.member-card-body {
+    padding: 1em 2em !important;
+}
+
+.member-name {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.member-desc {
+    color: #7D7987;
+    font-size: 1em;
+}
+
+.img-wrap,
+.img-wrap-contact {
+    display: inline-block;
+    position: relative;
+}
+
+.img-wrap>img,
+.img-wrap-contact>img {
+    position: relative;
+    z-index: 2;
+}
+
+.img-wrap::before,
+.img-wrap-contact::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4D77FF;
+    z-index: 1;
+}
+
+.img-wrap-contact {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.member-card-body {
+    padding: 1em;
+}
+
+/* Contact Section */
+
+#contact{
+    padding: 100px 0 150px 0;
+}
+
+.contact-main {
+    background: #EDF1FF;
+    padding: 3em;
+    height: 300px
+}
+
+.contact-head {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.contact-desc {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+/* Footer Section */
+
+.footer-main{
+    border-top: 2px solid #4D77FF;
+    padding: 1em 0;
+}
+
+.footer-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #4D77FF
+}
+
+.footer-copyright{
+    padding-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4D77FF;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 991px) {
+    .navbar-brand{
+        width: 50%;
+    }
+    
+    .navbar-brand > img{
+        width: 50%;
+    }
+
+    .mid-nav .nav-link{
+        margin-left: -48px !important;
+    }
+
+    .navbar-nav{
+        padding-left: 20px;
+    }
+
+    .nav-link{
+        margin: 0px 0;
+        width: 100%;
+    }
+
+    .signin{
+        margin-bottom: 15px;
+    }
+
+    .signup-btn{
+        width: 100% !important;
+    }
+
+    .hero-img{
+        margin-top: 100px;
+        width: 80%;
+    }
+
+    #contact{
+        padding-bottom: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 667px) {
+
+    .container{
+        max-width: 95%;
+    }
+
+    .head-title{
+        font-size: 2em;
+    }
+
+    .head-para{
+        width: 100%;
+    }
+
+    .article-item{
+        width: 100%;
+    }
+
+    .shape-left, .shape-right, .square-left{
+        display: none;
+    }
+
+    .footer-title{
+        font-size: 14px;
+    }
+
+    .footer-copyright{
+        font-size: 14px;
+        padding-top: 0;
+    }
+  }
+
+/* Animations */
+
+.square {
+    animation: ZoomInZoomOut 5s linear infinite;
+}
+
+@keyframes ZoomInZoomOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: -10px;
+    }
+}
+
+@keyframes RotateLeftRight {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+}
