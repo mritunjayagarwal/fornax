@@ -150,14 +150,19 @@ section {
     letter-spacing: 0.02em;
 }
 
-.hero-para {
+.hero-para, .hero-para-second {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.03em;
     color: #696969;
+}
+
+.hero-para-second{
+    font-size: 25px;
+    line-height: 32px;
 }
 
 /* About Sectio */
@@ -182,6 +187,7 @@ section {
 
 .about-head{
     font-weight: 600;
+    font-size: 22px;
 }
 
 /* Article Section */
